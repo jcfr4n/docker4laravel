@@ -42,7 +42,6 @@ echo "Generando ${ENV_FILE} con UID=${USER_ID} y GID=${GROUP_ID}"
 cat > "$ENV_FILE" <<EOF
 APP_NAME="${CURRENT_DIR}"
 APP_ENV=local
-APP_KEY=
 APP_DEBUG=true
 APP_URL="http://${CURRENT_DIR}.localhost:8000"
 APP_PORT=8000
