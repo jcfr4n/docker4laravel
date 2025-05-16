@@ -1,0 +1,9 @@
+{
+  "php.validate.executablePath": "/usr/local/bin/php",  // Ruta de PHP en el contenedor
+  "php.executablePath": "/usr/local/bin/php",  // Ruta de PHP en el contenedor
+  "intelephense.environment.phpVersion": "8.2",  // Versión de PHP que estás usando
+  "editor.formatOnSave": true,  // Formateo automático en guardar
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always"  // Corregir automáticamente problemas de código
+  }
+}
