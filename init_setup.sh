@@ -30,6 +30,12 @@ DB_ROOT_PASSWORD="root"
 # Detectar nombre del directorio actual
 CURRENT_DIR=$(basename "$PWD")
 
+# Si no existe el directorio app, crearlo
+if [ ! -d "./app" ]; then
+    echo "Creando directorio ./app..."
+    mkdir -p ./app
+fi
+
 # Crear o actualizar .env.docker
 echo "Generando ${ENV_FILE} con UID=${USER_ID} y GID=${GROUP_ID}"
 
